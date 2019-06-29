@@ -1,0 +1,19 @@
+
+<body>
+<div class="centre" *ngFor="let tut of tutorials " >
+<collapsible-list [type]="'accordion'">
+
+  <collapsible-list-item>
+    <collapsible-header class="waves-effect" style="font-family: Rockwell">
+      <markdown><h3>{{tut.topic}}</h3></markdown>
+    </collapsible-header>
+    <collapsible-body [expanded]="false">
+      <markdown>{{tut.store}}</markdown>
+      <img src="assets/img/gitpic.jpeg" width="110" height=auto>
+    </collapsible-body>
+  </collapsible-list-item>
+</collapsible-list>
+</div>
+
+</body>
+

@@ -1,0 +1,19 @@
+<header>
+  <nav class ="navbar navbar-expand-md navbar-dark bg-dark">
+  <div><a href="https://github.com/sroy96" class="navbar-brand">CODEitIN</a></div>
+
+  
+  <ul class="navbar-nav">
+
+<li><a  routerLink="/" class="nav-link">HOME</a></li>
+<li><a  routerLink="/spring" class="nav-link">SPRING BOOT</a></li>
+    <li><a  routerLink="/about" class="nav-link">ABOUT</a></li>
+<li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/add" class="nav-link">ADMIN</a></li>
+
+  <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">LOGIN</a></li>
+    <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LOGOUT</a></li>
+  </ul>
+  
+  </nav>
+  
+  </header>

@@ -1,0 +1,16 @@
+<div class="col-md-6">
+  <h3 class="text-center">Add File</h3>
+  <form>
+    <div class="form-group">
+      <label for="topic">TOPIC:</label>
+      <input type="topic" [(ngModel)]="tran.topic" placeholder="title" name="topic" class="form-control" id="topic">
+
+    </div>
+    <div class="form-group">
+      <label for="store">Storage:</label>
+      <input [(ngModel)]="tran.store" placeholder="store" name="store" class="form-control" id="store">
+    </div>
+  <button class="btn btn-success" (click)="createadder()">Create</button>
+  </form>
+  </div>
+<br>
